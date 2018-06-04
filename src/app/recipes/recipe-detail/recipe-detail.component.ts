@@ -23,11 +23,12 @@ export class RecipeDetailComponent implements OnInit {
     this.route.params.subscribe(
       (params: Params) => {
         const result = this.recipeService.getRecipe(params['name']);
-        if (!result) {
-          this.router.navigate(['../'], { relativeTo: this.route });
-        } else {
-          this.recipe = result // still throws an error
-        }
+        this.recipe = result;
+        // if (!result) {
+        //   this.router.navigate(['../'], { relativeTo: this.route });
+        // } else {
+        //   this.recipe = result // still throws an error
+        // }
       }
     );
   }
