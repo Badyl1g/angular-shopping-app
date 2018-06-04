@@ -13,27 +13,27 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'Vegan Pizza', 
-      'With Tomatos, Jalapeno, Olives and Mushrooms', 
+      'Pizza', 
+      'Z pomidorami, jalapeno, oliwkami i pieczarkami', 
       'https://www.veganricha.com/wp-content/uploads/2016/08/veggie-vegan-pizza-veganricha-5762-1.jpg',
       [
-        new Ingredient('Tomato', 2),
+        new Ingredient('Pomidor', 2),
         new Ingredient('Jalapeno', 4),
-        new Ingredient('Olives', 10),
-        new Ingredient('Mushrooms', 3)
+        new Ingredient('Oliwki', 10),
+        new Ingredient('Pieczarki', 3)
       ]
     ),
     new Recipe(
-      'Vegan Burger', 
-      'Simply the best',
+      'Burger', 
+      'Najlepszy w mieście!',
       'http://laurencariscooks.com/1_lcc/wp-content/uploads/2016/08/Black-Bean-Burgers-4-600x600.jpg',
       [
-        new Ingredient('Bun', 2),
-        new Ingredient('Beans', 1),
-        new Ingredient('Tomato', 1),
-        new Ingredient('Salad', 3),
-        new Ingredient('Vegan Mayo', 1),
-        new Ingredient('Paprika Sauce', 1)
+        new Ingredient('Bułka', 2),
+        new Ingredient('Fasola', 1),
+        new Ingredient('Pomidor', 1),
+        new Ingredient('Sałata', 3),
+        new Ingredient('Sos czosnkowy', 1),
+        new Ingredient('Sos paprykowo-ziołowy', 1)
       ]
     )
   ];

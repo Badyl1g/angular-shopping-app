@@ -1,10 +1,10 @@
-<div class="row">
+<div class="row appear">
   <div class="col-xs-12">
     <button routerLink="new" class="btn btn-success" [disabled]="!isAuthenticated()">New Recipe</button>
   </div>
 </div>
 <hr>
-<div class="row">
+<div class="row appear-delayed">
   <div class="col-xs-12">
     <app-recipe-item  
       *ngFor="let recipeEL of recipes" 

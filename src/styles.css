@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.appear {
+  opacity: 0;
+  animation: appear 0.3s ease-in-out forwards;
+}
+
+.appear-delayed {
+  opacity: 0;
+  animation: appear 0.3s 0.3s ease-in-out forwards;
+}
