@@ -9,7 +9,8 @@ import { RecipeExists } from "./recipe-exist-guard.service";
 import { AuthGuard } from "../auth/auth-guard.service";
 
 const recipeRoutes: Routes = [
-  { path: 'recipes', component: RecipesComponent, children: [
+  // { path: 'recipes', component: RecipesComponent, children: [
+  { path: '', component: RecipesComponent, children: [
     { path: '', component: RecipeStartComponent },
     { path: 'new', component: RecipeEditComponent, canActivate: [ AuthGuard ] },
     { path: ':name', component: RecipeDetailComponent, canActivate: [ RecipeExists ] },
