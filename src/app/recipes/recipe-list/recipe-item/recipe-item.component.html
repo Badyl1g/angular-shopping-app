@@ -1,20 +1,21 @@
 <a 
   [routerLink]="recipe.name" 
   routerLinkActive="active" 
-  class="list-group-item clearfix" 
+  class="recipe-list-item" 
   style="margin-bottom: 15px">
   
-  <div class="pull-left" style="max-width: calc(100% - 100px);">
-    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-    <p class="list-group-item-text">{{ recipe.description }}</p>
-  </div>
+    <div 
+      class="mythumbnail" 
+      [ngStyle]="{'background-image': 'url(' + recipe.imagePath + ')'}"></div>
 
-  <span class="pull-right">
-    <img 
-      [src]="recipe.imagePath"
-      alt="{{ recipe.name }}" 
-      class="img-responsive" 
-      style="max-height: 50px">
-  </span>
+  <div class="right">
+    <h3 class="list-group-item-heading">
+      {{ recipe.name }}
+    </h3>
+    <hr>
+    <p class="list-group-item-text">
+      {{ recipe.description }}
+    </p>
+  </div>
 
 </a>

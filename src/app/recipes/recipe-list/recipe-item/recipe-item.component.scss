@@ -1,3 +1,40 @@
-a {
-  cursor: pointer;
+.recipe-list-item {
+  width: calc(100% - 30px);
+  height: 145px;
+  padding: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: none;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0px 0px 25px -10px rgba(0,0,0,0.2);
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transform: translateX(10px);
+  }
+
+  .mythumbnail {
+    min-width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .right {
+    // width: calc(100% - 125px - 20px);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    hr {
+      width: 165px;
+      margin: 15px 0px;
+    }
+  }
 }
